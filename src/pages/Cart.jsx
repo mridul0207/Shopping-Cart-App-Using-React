@@ -3,9 +3,6 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
 
-
-
-
 const Cart = () => {
 
   const {cart} = useSelector((state) => state);
@@ -18,7 +15,7 @@ const Cart = () => {
   }, [cart])
 
   return (
-    <div>
+    <div className="mx-auto">
   {
     cart.length > 0  ? 
     (<div>
@@ -44,7 +41,7 @@ const Cart = () => {
 
         <div>
           <p>Total Amount: ${totalAmount}</p>
-          <button>
+          <button className="bg-green-500 p-4 rounded-full font-bold text-white">
             CheckOut Now
           </button>
         </div>

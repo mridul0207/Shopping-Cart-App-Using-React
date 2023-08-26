@@ -15,10 +15,10 @@ const CartItem = ({item, itemIndex}) => {
   return (
     <div>
 
-      <div>
+      <div className="flex">
 
         <div>
-          <img src={item.image} />
+          <img src={item.image}/>
         </div>
         <div>
           <h1>{item.title}</h1>
